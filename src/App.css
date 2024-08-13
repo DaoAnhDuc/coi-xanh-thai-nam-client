@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --green: #86be4c;
+  --dark-blue: #132959;
+  --light-blue: #5d98d1;
+  --white: hwb(0 100% 0%);
+  --pink: #e46c86;
+  --be: #edd3ae;
+  --sliver: #d7d6d6;
+  --red: #cc0000;
+}
+
+.btn-pink {
+  background: var(--white);
+  border: 1px solid var(--white);
+  padding: 4px 16px;
+  font-weight: bold;
+  color: var(--pink);
+  cursor: pointer;
+}
+.btn-pink:hover {
+  color: var(--white);
+  background: var(--pink);
+  border: 1px solid var(--white);
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn-blue {
+  background: var(--white);
+  border: 1px solid var(--white);
+  padding: 10px 32px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+.btn-blue:hover {
+  color: var(--white);
+  background: var(--dark-blue);
+  border: 1px solid var(--white);
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.btn-blue-2:hover {
+  background: var(--white);
+  border: 1px solid var(--white);
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+.btn-blue-2 {
+    padding: 10px 32px;
+  color: var(--white);
+  background: var(--dark-blue);
+  border: 1px solid var(--white);
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn-light-blue {
+  background: var(--white);
+  border: 1px solid var(--white);
+  padding: 10px 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--light-blue);
+}
+.btn-light-blue:hover {
+  color: var(--white);
+  background: var(--light-blue);
+  border: 1px solid var(--white);
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+

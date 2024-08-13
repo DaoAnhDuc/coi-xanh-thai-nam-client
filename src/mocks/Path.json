@@ -1,0 +1,17 @@
+{
+  "home": {
+    "url": "/"
+  },
+  "admin": {
+    "url": "/admin/*"
+  },
+  "monitor": {
+    "url": "/monitor/*"
+  },
+  "login": {
+    "url": "/login"
+  },
+  "register": {
+    "url": "/register"
+  }
+}
