@@ -23,7 +23,7 @@ const Shipping = ({}: Props) => {
         <div className="flex gap-4 items-center">
           <img src="./images/contact.png" alt="" />
           <div>
-            <p className="font-bold text-lg"> 0982.415.495</p>
+            <p className="font-bold text-lg"> 0835.248.666</p>
             <p>Tư vấn, bán hàng miễn phí !</p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { } from 'react';
+import {} from 'react';
 
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,9 +6,9 @@ type Props = {};
 
 const Slider = ({}: Props) => {
   const imgs = [
-    './images/slide/1.jpg',
-    './images/slide/2.jpg',
-    './images/slide/3.jpg',
+    './images/slide/TN1.png',
+    './images/slide/TN2.png',
+    './images/slide/TN3.png',
   ];
   return (
     <div>

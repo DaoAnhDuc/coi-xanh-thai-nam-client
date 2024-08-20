@@ -15,11 +15,11 @@ const Header = ({}: Props) => {
         <div className="flex gap-12 items-center">
           <img src="./images/logo.png" alt="" className="h-16" />
           <div className="flex gap-10">
-            <div className="text-xl">Trang chủ</div>
-            <div className="text-xl">Sản phẩm</div>
-            <div className="text-xl">Chia sẻ</div>
-            <div className="text-xl">Giới thiệu</div>
-            <div className="text-xl">Liên hệ</div>
+            <div className="text-xl font-bold mt-2">Trang chủ</div>
+            <div className="text-xl font-bold mt-2">Sản phẩm</div>
+            <div className="text-xl font-bold mt-2">Chia sẻ</div>
+            <div className="text-xl font-bold mt-2">Giới thiệu</div>
+            <div className="text-xl font-bold mt-2">Liên hệ</div>
           </div>
         </div>
         <div className="flex gap-2 items-center">

@@ -14,20 +14,21 @@ const Footer = ({}: Props) => {
           <p className="font-bold text-xl">2. Chính sách bảo mật thông tin</p>
         </div>
         <p className="mt-2">
-          Số ĐKKD 0108167741 do Sở KHĐT Tp. Hà Nội cấp ngày 12/02/2018
+          Số ĐKKD 0110343909 do Sở KHĐT TP. Hà Nội cấp ngày 08/05/2023
         </p>
         <img
-        className='m-auto'
+          className="m-auto"
           src="https://theme.hstatic.net/1000308606/1001214695/14/tbbct.png?v=267"
           alt=""
         />
-        <p className="mt-2">Copyrights © 2018 by The Bamboo.</p>
-        <p className="mt-2">CÔNG TY TNHH MÂY TRE XUẤT KHẨU PHÚ MINH HƯNG YÊN</p>
+        <p className="mt-2">Copyrights © 2023 by THAI NAM.</p>
+        <p className="mt-2">CÔNG TY TNHH SX VÀ TM CÓI XANH THÁI NAM</p>
+        <p className="mt-2">Giấy phép kinh doanh số: 0110343909</p>
         <p className="mt-2">
-          Địa chỉ: Khu công nghiệp Phố Nối B, Xã Nghĩa Hiệp, Huyện Yên Mỹ, Tỉnh
-          Hưng Yên
+          Địa chỉ: 75 Ngõ 37 Bằng Liệt, Phường Hoàng Liệt, Quận Hoàng Mai, TP Hà
+          Nội.
         </p>
-        <p className="mt-2">Giấy phép kinh doanh số: 0900192696</p>
+        <p>Hotline : 0835248666 - 0916912192</p>
       </div>
     </div>
   );

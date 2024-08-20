@@ -5,7 +5,7 @@ type Props = {};
 const GioiThieu = ({}: Props) => {
   return (
     <div className="mt-10">
-      <div className="container p-2 flex gap-10">
+      <div className="container flex gap-10">
         <div
           className="flex-1 p-10 text-white"
           style={{ background: 'var(--green)' }}
@@ -13,26 +13,27 @@ const GioiThieu = ({}: Props) => {
           <p className="text-5xl">Giới thiệu</p>
           <p className="ml-2">_____________________</p>
           <p className="text-lg mt-4 leading-8">
-            Mây Tre Trung Phương – Tự hào là một trong những thương hiệu đèn mây
-            tre đan lớn nhất TP. HCM. Chúng tôi may mắn được sinh ra và lớn lên
-            từ mảnh đất Hà Tây cũ, từ lâu đã nổi tiếng với các nghề truyền thống
-            làm quạt, nón, lồng chim. Đó chính là điều kiện, cơ hội cũng như
-            động lực thôi thúc giám đốc của chúng tôi…
+            Chúng tôi là Công ty Cói Xanh Thái Nam, một đơn vị chuyên sản xuất
+            và cung cấp các sản phẩm trang trí nhà cửa từ nguyên liệu tự nhiên
+            như cói và bèo. Với sứ mệnh mang đến không gian sống gần gũi với
+            thiên nhiên, chúng tôi tự hào là thương hiệu tiên phong trong lĩnh
+            vực sản xuất đồ nội thất và trang trí thủ công tại Việt Nam. Tại Cói
+            Xanh Thái Nam, chúng tôi cam kết sử dụng 100% nguyên liệu tự nhiên,
+            thân thiện với môi trường. Mỗi sản phẩm đều được chế tác tỉ mỉ bởi
+            những nghệ nhân lành nghề, đảm bảo chất lượng vượt trội và thiết kế
+            độc đáo.
           </p>
-          <p  className="text-lg mt-4 leading-8">
-            Trong khoảng gần 10 năm trở lại đây, chúng tôi đã và đang đẩy mạnh
-            kinh doanh các sản phẩm mây tre thị trường trong nước. Với tiêu chí
-            “Người Việt dùng hàng Việt”, rất nhiều các mẫu sản phẩm mây tre đan
-            đã được sản xuất đại trà để đáp ứng thị hiếu của người tiêu dùng
-            trong nước. Chúng tôi hiện tại đang phân phối chủ yếu các nhóm sản
-            phẩm về đèn mây tre, lồng chim, giỏ tre, khay tre, đèn hạt cườm, các
-            sản phẩm nhựa giả mây. 
+          <p className="text-lg mt-4 leading-8">
+            Chúng tôi cung cấp đa dạng các mặt hàng như thảm, giỏ đựng, đồ trang
+            trí tường, và nhiều sản phẩm khác, phù hợp với mọi phong cách trang
+            trí nội thất. Chúng tôi không chỉ chú trọng đến chất lượng sản phẩm
+            mà còn quan tâm đến sự bền vững và trách nhiệm xã hội. Bằng cách lựa
+            chọn nguyên liệu từ các nguồn bền vững và thực hiện quy trình sản
+            xuất thân thiện với môi trường, chúng tôi góp phần bảo vệ hệ sinh
+            thái và phát triển cộng đồng địa phương.
           </p>
         </div>
-        <img
-          src="https://maytretrungphuong.com/wp-content/uploads/2021/08/cong-ty-may-tre-trung-phuong.jpg"
-          alt=""
-        />
+        <img src="./images/tn4.png" alt="" />
       </div>
     </div>
   );
