@@ -10,7 +10,7 @@ type Props = {};
 
 const ProductsPage = ({}: Props) => {
   const { productType, productId } = useParams();
-  const appData: IAppDataItem[] = useAppSelector((state) => state.appData);
+  const appData: Array<IAppDataItem> = useAppSelector((state) => state.appData);
   const data: IAppDataItem | undefined = appData.find(
     (i) => i.query === productType,
   );
@@ -36,7 +36,7 @@ const ProductsPage = ({}: Props) => {
               </p>
               <div className="grid grid-cols-4 gap-4">
                 {data.data.map((item, idx) => (
-                  <Link to={`/${data.query}/${idx}`}>
+                  <Link key={idx} to={`/${data.query}/${idx}`}>
                     <div
                       className="relative hover:shadow-lg cursor-pointer overflow-hidden"
                       key={idx}

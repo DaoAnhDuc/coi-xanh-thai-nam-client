@@ -1,6 +1,7 @@
 import { SearchOutlined } from '@ant-design/icons';
 import { Input } from 'antd';
 import {} from 'react';
+import { Link } from 'react-router-dom';
 
 type Props = {};
 
@@ -13,9 +14,13 @@ const Header = ({}: Props) => {
     >
       <div className="container flex justify-between items-center">
         <div className="flex gap-12 items-center">
-          <img src="./images/logo.png" alt="" className="h-16" />
+          <Link to="/">
+            <img src="./images/logo.png" alt="" className="h-16" />
+          </Link>
           <div className="flex gap-10">
-            <div className="text-xl font-bold mt-2">Trang chủ</div>
+            <div className="text-xl font-bold mt-2">
+              <Link to="/">Trang chủ</Link>
+            </div>
             <div className="text-xl font-bold mt-2">Sản phẩm</div>
             <div className="text-xl font-bold mt-2">Chia sẻ</div>
             <div className="text-xl font-bold mt-2">Giới thiệu</div>

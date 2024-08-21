@@ -7,7 +7,7 @@ type Props = {};
 
 const ProductDetailPage = ({  }: Props) => {
     const { productType, productId } = useParams();
-    const appData: IAppDataItem[] = useAppSelector((state) => state.appData);
+    const appData: Array<IAppDataItem> = useAppSelector((state) => state.appData);
     const data: IAppDataItem | undefined = appData.find(
       (i) => i.query === productType,
     );

@@ -2,9 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 export interface IAppDataItem{
   title: string
   query: string
-  data: any[]
+  data: Array<any>
 }
-const initialState: IAppDataItem[] = [
+const initialState: Array<IAppDataItem> = [
   {
     title: 'SẢN PHẨM BÁN CHẠY',
     query: 'san-pham-ban-chay',
@@ -47,22 +47,68 @@ const initialState: IAppDataItem[] = [
   {
     title: 'SET TREO TƯỜNG',
     query: 'set-treo-tuong',
-    data: [],
+    data: [
+      {
+        img: './images/./product/sp9.png',
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+      {
+        img: './images/./product/sp10.png',
+
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+    ],
   },
   {
     title: 'THẢM',
     query: 'tham',
-    data: [],
+    data: [
+      {
+        img: './images/./product/sp10.png',
+
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+      {
+        img: './images/./product/sp11.png',
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+      {
+        img: './images/./product/sp12.png',
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+    ],
   },
   {
     title: 'TÚI',
     query: 'tui',
-    data: [],
+    data: [
+      {
+        img: './images/./product/sp1.png',
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+    ],
   },
   {
     title: 'GIỎ ĐỰNG ĐỒ',
     query: 'gio-dung-do',
-    data: [],
+    data: [
+      {
+        img: './images/./product/sp12.png',
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+      {
+        img: './images/./product/sp13.png',
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+      {
+        img: './images/./product/sp14.png',
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+      {
+        img: './images/./product/sp1.png',
+        name: 'Bàn Khảm Trai Cao Cấp : ms 001',
+      },
+    ],
   },
   {
     title: 'KHAY GIỎ',

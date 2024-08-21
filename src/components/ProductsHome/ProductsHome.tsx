@@ -6,7 +6,7 @@ import { useAppSelector } from '../../redux/store';
 type Props = {}
 
 const ProductsHome = ({}: Props) => {
-  const appData: IAppDataItem[] = useAppSelector((state) => state.appData);
+  const appData: Array<IAppDataItem> = useAppSelector((state) => state.appData);
   return (
     <div style={{ width: 'calc(100% - 360px)' }}>
       {appData.map((item, index) => (

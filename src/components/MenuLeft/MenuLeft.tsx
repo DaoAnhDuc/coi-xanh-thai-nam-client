@@ -6,7 +6,7 @@ import './MenuLeft.scss';
 type Props = {};
 
 const MenuLeft = ({}: Props) => {
-  const appData: IAppDataItem[] = useAppSelector((state) => state.appData);
+  const appData: Array<IAppDataItem> = useAppSelector((state) => state.appData);
   const location = useLocation();
   const { pathname } = location;
 

@@ -13,7 +13,7 @@ const Router = () => {
         <Route
           path={`:productId`}
           element={<ProductDetailPage />}
-        ></Route>
+        />
       </Route>
     </ErrorBoundaryRoutes>
   );
