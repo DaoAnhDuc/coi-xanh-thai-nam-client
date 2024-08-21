@@ -64,7 +64,7 @@ const App = () => {
           <Layout className={styleModule.monitor}>
             <LoadingTopBar />
             <Router />
-            <div className='fixed bottom-40 right-8 z-20'>
+            <div className="fixed bottom-40 right-8 z-20">
               <img
                 className="w-12 h-12"
                 src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"

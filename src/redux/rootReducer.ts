@@ -1,3 +1,4 @@
+import appDataSlice from '../reducers/slice/appDataSlice';
 import authSlice from '../reducers/slice/authSlice';
 import groupSlice from '../reducers/slice/groupSlice';
 import loadingBarSlice from '../reducers/slice/loadingBarSlice';
@@ -18,5 +19,6 @@ const rootReducer: any = {
   organization: organizationSlice,
   role: roleSlice,
   project: projectSlice,
+  appData: appDataSlice,
 };
 export { rootReducer };

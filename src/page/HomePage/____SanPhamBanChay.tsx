@@ -1,11 +1,11 @@
 import {} from 'react';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { chunkArray } from '.';
+import { chunkArray } from '../../utils';
+import { Link } from 'react-router-dom';
+import { IAppDataItem } from '../../reducers/slice/appDataSlice';
 type Props = {
-  data: {
-    title: string;
-  };
+  data: IAppDataItem;
 };
 
 const SanPhamBanChay = ({ data }: Props) => {
@@ -53,10 +53,11 @@ const SanPhamBanChay = ({ data }: Props) => {
       name: 'Bàn Khảm Trai Cao Cấp : ms 001',
     },
   ];
+
   return (
     <div className="mb-12 w-full overflow-hidden">
       <div
-        className="text-white"
+        className="text-white flex justify-between"
         style={{ borderBottom: '3px solid var(--green)' }}
       >
         <div
@@ -65,6 +66,9 @@ const SanPhamBanChay = ({ data }: Props) => {
         >
           {data.title}
         </div>
+        <Link to={'/' + data.query} className="text-black">
+          Xem tất cả
+        </Link>
       </div>
       <div className="w-full overflow-hidden">
         <Swiper
