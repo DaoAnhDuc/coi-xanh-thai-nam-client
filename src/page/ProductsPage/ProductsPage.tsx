@@ -16,7 +16,7 @@ const ProductsPage = ({}: Props) => {
   );
   if (!data) return null;
   return (
-    <div className="text-base">
+    <div className="text-base overflow-x-hidden">
       <Header />
       {productId ? (
         <Outlet />
@@ -54,10 +54,7 @@ const ProductsPage = ({}: Props) => {
                         className="w-full h-72 object-contain  hover:scale-105"
                       />
                       <div className="px-2 py-1">
-                        <p className="line-clamp-2 text-center">
-                          {item.name ||
-                            'Tên sản phẩm ở đây, có thể dài 2 dòng tùy theo dài quá sẽ có ...'}
-                        </p>
+                        <p className="line-clamp-2 text-center">{item.name || "Tên sản phẩm ở đây, có thể dài 2 dòng tùy theo dài quá sẽ có ..."}</p>
                       </div>
                       <div className="flex justify-center  items-center gap-4 pb-4" />
                     </div>

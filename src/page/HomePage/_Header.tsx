@@ -1,31 +1,11 @@
 import { SearchOutlined } from '@ant-design/icons';
 import { Input } from 'antd';
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 type Props = {};
 
 const Header = ({}: Props) => {
-  useEffect(() => {
-    console.log(document.querySelectorAll('#header .smooth'));
 
-    document.querySelectorAll('#header asmooth').forEach((anchor) => {
-      console.log(anchor);
-
-      anchor.addEventListener('click', function (e: any) {
-        e.preventDefault();
-        alert(13);
-        const header: any = document.querySelector('#header');
-        const navHeight: any = header?.offsetHeight; // Lấy chiều cao của navigation
-        const targetPosition = e.offsetTop - navHeight; // Tính khoảng cách trừ đi chiều cao của navigation
-        document.querySelector(e.getAttribute('href')).scrollIntoView({
-          top: targetPosition,
-          behavior: 'smooth',
-        });
-      });
-    });
-    return () => {};
-  }, []);
 
   const scroll = (e: any) => {
     const targetSection: any = document.querySelector(
@@ -39,7 +19,6 @@ const Header = ({}: Props) => {
       top: targetPosition - 20,
       behavior: 'smooth',
     });
-    console.log(12312);
   };
 
   return (

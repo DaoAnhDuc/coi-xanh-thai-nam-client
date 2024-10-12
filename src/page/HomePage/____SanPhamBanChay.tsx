@@ -9,8 +9,6 @@ type Props = {
 };
 
 const SanPhamBanChay = ({ data }: Props) => {
-  console.log(data);
-  
   return (
     <div className="mb-12 w-full overflow-hidden">
       <div

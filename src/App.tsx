@@ -23,6 +23,8 @@ import {
 import { serviceConfig } from './services/serviceManager';
 import styleModule from './style.module.scss';
 import { ArrowUpOutlined } from '@ant-design/icons';
+import { IAppDataItem, setAppData } from './reducers/slice/appDataSlice';
+import axios from 'axios';
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { useToken } = theme;
 
@@ -64,7 +66,28 @@ const App = () => {
   useEffect(() => {
     serviceConfig(getStore());
     dispatch(setLanguge(i18n.resolvedLanguage));
+    getData();
   }, []);
+
+  const getData = () => {
+    const appData: Array<IAppDataItem> = getStore().getState().appData;
+    const promises: any[] = [];
+    appData.forEach((i) => {
+      try {
+        promises.push(axios.get(`/database/${i.query}.json`));
+      } catch (error) {}
+    });
+    Promise.all(promises).then((values) => {
+      const newAppData: Array<IAppDataItem> = [];
+      values.forEach((item, index) => {
+        newAppData.push({
+          ...appData[index],
+          data: item.data,
+        });
+      });
+      dispatch(setAppData(newAppData));
+    });
+  };
 
   return (
     <ConfigProvider
