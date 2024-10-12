@@ -1,4 +1,4 @@
-window.database.Tui = [
+window.Tui = [
   { img: './images/Tui/1HVN5FK8T_5IGC2E.jpg', name: '', description: '' },
   { img: './images/Tui/1HVN5FK9B_5IGC2E.jpg', name: '', description: '' },
   { img: './images/Tui/1HVN5FK9E_5IGC2E.jpg', name: '', description: '' },

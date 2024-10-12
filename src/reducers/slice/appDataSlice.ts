@@ -47,57 +47,57 @@ const initialState: Array<IAppDataItem> = [
   {
     title: 'SET TREO TƯỜNG',
     query: 'set-treo-tuong',
-    data: window.database.SetTreoTuong,
+    data: window.SetTreoTuong,
   },
   {
     title: 'THẢM',
     query: 'tham',
-    data: window.database.Tham,
+    data: window.Tham,
   },
   {
     title: 'TÚI',
     query: 'tui',
-    data: window.database.Tui,
+    data: window.Tui,
   },
   {
     title: 'GIỎ ĐỰNG ĐỒ',
     query: 'gio-dung-do',
-    data: window.database.GioDungDo,
+    data: window.GioDungDo,
   },
   {
     title: 'KHAY GIỎ',
     query: 'khay-gio',
-    data: window.database.KhayGio,
+    data: window.KhayGio,
   },
   {
     title: 'QUẠT',
     query: 'quat',
-    data: window.database.Quat,
+    data: window.Quat,
   },
   {
     title: 'DÉP GUỐC',
     query: 'dep-guoc',
-    data: window.database.DepGuoc,
+    data: window.DepGuoc,
   },
   {
     title: 'GIỎ TRE TRUNG THU - TẾT',
     query: 'gio-tre-trung-thu-tet',
-    data: window.database.GioTreTrungThuTet,
+    data: window.GioTreTrungThuTet,
   },
   {
     title: 'DECOR CHO BÉ',
     query: 'decor-cho-be',
-    data: window.database.DecorCoBe,
+    data: window.DecorCoBe,
   },
   {
     title: 'GIỎ ĐỰNG HÀNH TỎI',
     query: 'gio-dung-hanh-toi',
-    data: window.database.GioDungHanhToi_TreoCay,
+    data: window.GioDungHanhToi_TreoCay,
   },
   {
     title: 'Khay đựng đồ',
     query: 'khay-dung-do',
-    data: window.database.KhayDungDo,
+    data: window.KhayDungDo,
   },
   {
     title: 'ĐỒ NOEL',

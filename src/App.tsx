@@ -35,19 +35,17 @@ interface IProduct {
 declare global {
   interface Window {
     MyNamespace: any;
-    database: {
-      DecorCoBe: IProduct[];
-      DepGuoc: IProduct[];
-      GioDungDo: IProduct[];
-      GioDungHanhToi_TreoCay: IProduct[];
-      GioTreTrungThuTet: IProduct[];
-      KhayDungDo: IProduct[];
-      KhayGio: IProduct[];
-      Quat: IProduct[];
-      SetTreoTuong: IProduct[];
-      Tham: IProduct[];
-      Tui: IProduct[];
-    };
+    DecorCoBe: IProduct[];
+    DepGuoc: IProduct[];
+    GioDungDo: IProduct[];
+    GioDungHanhToi_TreoCay: IProduct[];
+    GioTreTrungThuTet: IProduct[];
+    KhayDungDo: IProduct[];
+    KhayGio: IProduct[];
+    Quat: IProduct[];
+    SetTreoTuong: IProduct[];
+    Tham: IProduct[];
+    Tui: IProduct[];
   }
 }
 
@@ -87,7 +85,7 @@ const App = () => {
           className={styleModule.app}
           style={{ background: token.colorBgBase }}
         >
-          <Layout id='app-layout' className={styleModule.monitor}>
+          <Layout id="app-layout" className={styleModule.monitor}>
             <LoadingTopBar />
             <Router />
             <div className="fixed bottom-40 right-8 z-20">
@@ -97,11 +95,15 @@ const App = () => {
                 alt=""
               />
             </div>
-            <div className="fixed bottom-10 right-8 z-20 w-8 h-8 bg-white flex justify-center items-center rounded-2xl text-xl" style={{border: '1px solid #dfdfdf'}} onClick={() => {
-              document.getElementById('app-layout')?.scrollTo({
-                top: 0,
-              });
-            }}>
+            <div
+              className="fixed bottom-10 right-8 z-20 w-8 h-8 bg-white flex justify-center items-center rounded-2xl text-xl"
+              style={{ border: '1px solid #dfdfdf' }}
+              onClick={() => {
+                document.getElementById('app-layout')?.scrollTo({
+                  top: 0,
+                });
+              }}
+            >
               <ArrowUpOutlined />
             </div>
           </Layout>

@@ -1,4 +1,4 @@
-window.database.Quat = [
+window.Quat = [
   { img: './images/Quat/IMG_9773.JPG', name: '', description: '' },
   {
     img: './images/Quat/z5654896920879_23def5dc070e08f328d526c7fdb217d8.jpg',

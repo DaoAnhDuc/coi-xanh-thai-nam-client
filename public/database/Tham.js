@@ -1,4 +1,4 @@
-window.database.Tham =[
+window.Tham =[
   { img: './images/Tham/1.png', name: '', description: '' },
   { img: './images/Tham/2.png', name: '', description: '' },
   { img: './images/Tham/3.png', name: '', description: '' },

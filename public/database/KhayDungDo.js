@@ -1,4 +1,4 @@
-window.database.KhayDungDo = [
+window.KhayDungDo = [
   { img: './images/KhayDungDo/3.png', name: '', description: '' },
   { img: './images/KhayDungDo/4.png', name: '', description: '' },
   { img: './images/KhayDungDo/5.png', name: '', description: '' },

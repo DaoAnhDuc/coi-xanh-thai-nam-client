@@ -1,4 +1,4 @@
-window.database.KhayGio = [
+window.KhayGio = [
   {
     img: './images/KhayGio/0c1b77608d9882dca0a55a36b8f72b41.jpeg',
     name: '',

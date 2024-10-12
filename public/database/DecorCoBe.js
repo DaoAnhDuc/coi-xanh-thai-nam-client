@@ -1,4 +1,4 @@
-window.database.DecorCoBe = [
+window.DecorCoBe = [
   { img: './images/DecorChoBe/IMG_0822.JPG', name: '', description: '' },
   { img: './images/DecorChoBe/IMG_1183.JPG', name: '', description: '' },
   { img: './images/DecorChoBe/IMG_1186.JPG', name: '', description: '' },
