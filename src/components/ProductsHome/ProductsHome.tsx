@@ -8,7 +8,7 @@ type Props = {}
 const ProductsHome = ({}: Props) => {
   const appData: Array<IAppDataItem> = useAppSelector((state) => state.appData);
   return (
-    <div style={{ width: 'calc(100% - 360px)' }}>
+    <div style={{ width: '100%' }}>
       {appData.map((item, index) => (
         <SanPhamBanChay data={item} key={index} />
       ))}

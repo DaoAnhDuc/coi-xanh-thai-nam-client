@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { chunkArray } from '../../utils';
 import { Link } from 'react-router-dom';
 import { IAppDataItem } from '../../reducers/slice/appDataSlice';
+import CardProduct from '../../components/CardProduct/CardProduct';
 type Props = {
   data: IAppDataItem;
 };
@@ -21,48 +22,37 @@ const SanPhamBanChay = ({ data }: Props) => {
         >
           {data.title}
         </div>
-        <Link to={'/' + data.query} className="text-black">
+        <Link to={'/' + data.query} className="text-black pr-5">
           Xem tất cả
         </Link>
       </div>
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden lg:block hidden">
         <Swiper
           navigation={true}
           modules={[Navigation]}
-          className="mt-1  w-full max-w-full pb-2"
+          className="mt-1 w-full max-w-full pb-2"
         >
           {chunkArray(data.data, 4).map((arr: Array<any>, index: number) => (
             <SwiperSlide key={index} className="relative">
               <div className="grid grid-cols-4 gap-4" key={index}>
                 {arr.map((item, idx) => (
                   <Link key={idx} to={`/${data.query}/${idx}`}>
-                    <div
-                      className="relative hover:shadow-lg cursor-pointer overflow-hidden"
-                      key={idx}
-                      style={{ border: '1px solid #dfdfdf' }}
-                    >
-                      {/* <div
-                        className="absolute top-3 right-3 w-12 h-12 text-white rounded-full flex justify-center items-center"
-                        style={{ background: 'var(--green)' }}
-                      >
-                        {item.sale}
-                      </div> */}
-                      <img
-                        src={item.img}
-                        alt=""
-                        className="w-full h-72 object-contain  hover:scale-105"
-                      />
-                      <div className="px-2 py-1">
-                        <p className="line-clamp-2 text-center">{item.name || "Tên sản phẩm ở đây, có thể dài 2 dòng tùy theo dài quá sẽ có ..."}</p>
-                      </div>
-                      <div className="flex justify-center  items-center gap-4 pb-4" />
-                    </div>
+                    <CardProduct item={item} />
                   </Link>
                 ))}
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      <div className="w-full overflow-hidden block lg:hidden">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-2 p-5">
+          {data.data.slice(0, 4).map((item, idx) => (
+            <Link key={idx} to={`/${data.query}/${idx}`}>
+              <CardProduct item={item} />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

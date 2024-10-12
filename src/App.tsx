@@ -30,9 +30,9 @@ const { useToken } = theme;
 
 
 declare global {
+  // tslint:disable-next-line:interface-name
   interface Window {
     MyNamespace: any;
-
   }
 }
 
@@ -56,7 +56,7 @@ const App = () => {
 
   const getData = () => {
     const appData: Array<IAppDataItem> = getStore().getState().appData;
-    const promises: any[] = [];
+    const promises: Array<any> = [];
     appData.forEach((i) => {
       try {
         promises.push(
@@ -98,13 +98,13 @@ const App = () => {
           <Layout id="app-layout" className={styleModule.monitor}>
             <LoadingTopBar />
             <Router />
-            <div className="fixed bottom-40 right-8 z-20">
+            {/* <div className="fixed bottom-40 right-8 z-20">
               <img
                 className="w-12 h-12"
                 src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
                 alt=""
               />
-            </div>
+            </div> */}
             <div
               className="fixed bottom-10 right-8 z-20 w-8 h-8 bg-white flex justify-center items-center rounded-2xl text-xl"
               style={{ border: '1px solid #dfdfdf' }}

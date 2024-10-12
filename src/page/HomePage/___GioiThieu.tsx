@@ -5,7 +5,7 @@ type Props = {};
 const GioiThieu = ({}: Props) => {
   return (
     <div className="mt-10" >
-      <div className="container flex gap-10">
+      <div className="container lg:flex lg:gap-10">
         <div
           className="flex-1 p-10 text-white"
           style={{ background: 'var(--green)' }}
@@ -33,7 +33,7 @@ const GioiThieu = ({}: Props) => {
             thái và phát triển cộng đồng địa phương.
           </p>
         </div>
-        <img src="./images/tn4.png" alt="" />
+        <img src="./images/tn4.png" alt="" className='lg:w-1/2 m-auto' />
       </div>
     </div>
   );

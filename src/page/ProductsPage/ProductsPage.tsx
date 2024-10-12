@@ -5,6 +5,7 @@ import Header from '../HomePage/_Header';
 import Footer from '../HomePage/Footer';
 import { IAppDataItem } from '../../reducers/slice/appDataSlice';
 import { useAppSelector } from '../../redux/store';
+import CardProduct from '../../components/CardProduct/CardProduct';
 
 type Props = {};
 
@@ -26,38 +27,20 @@ const ProductsPage = ({}: Props) => {
             className="flex w-full max-w-full gap-10"
             style={{ minHeight: '80vh' }}
           >
-            <MenuLeft />
-            <div>
+            <div className="lg:block hidden" style={{ width: 320 }}>
+              <MenuLeft />
+            </div>
+            <div style={{ flex: 1 }}>
               <p
-                className="text-4xl font-bold mb-4"
+                className="text-4xl font-bold mb-4  lg:px-0 px-5"
                 style={{ color: 'var(--green)' }}
               >
                 {data.title}
               </p>
-              <div className="grid grid-cols-4 gap-4">
+              <div className="grid xl:grid-cols-4  lg:grid-cols-3 md:grid-cols-2 col-span-1 gap-4 lg:px-0 px-5">
                 {data.data.map((item, idx) => (
                   <Link key={idx} to={`/${data.query}/${idx}`}>
-                    <div
-                      className="relative hover:shadow-lg cursor-pointer overflow-hidden"
-                      key={idx}
-                      style={{ border: '1px solid #dfdfdf' }}
-                    >
-                      {/* <div
-                        className="absolute top-3 right-3 w-12 h-12 text-white rounded-full flex justify-center items-center"
-                        style={{ background: 'var(--green)' }}
-                      >
-                        {item.sale}
-                      </div> */}
-                      <img
-                        src={item.img}
-                        alt=""
-                        className="w-full h-72 object-contain  hover:scale-105"
-                      />
-                      <div className="px-2 py-1">
-                        <p className="line-clamp-2 text-center">{item.name || "Tên sản phẩm ở đây, có thể dài 2 dòng tùy theo dài quá sẽ có ..."}</p>
-                      </div>
-                      <div className="flex justify-center  items-center gap-4 pb-4" />
-                    </div>
+                    <CardProduct item={item} />
                   </Link>
                 ))}
               </div>

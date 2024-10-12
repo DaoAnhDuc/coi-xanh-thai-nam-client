@@ -9,6 +9,9 @@ import Shipping from './__Shipping';
 import Slider from './__Slider';
 import GioiThieu from './___GioiThieu';
 import './style.scss';
+import { Layout } from 'antd';
+import Sider from 'antd/es/layout/Sider';
+import { Content } from 'antd/es/layout/layout';
 type Props = {};
 
 const HomePage = ({}: Props) => {
@@ -17,7 +20,7 @@ const HomePage = ({}: Props) => {
   }, []);
 
   return (
-    <div  className="text-base">
+    <div className="text-base">
       <Header />
       <Slider />
       <Shipping />
@@ -26,13 +29,21 @@ const HomePage = ({}: Props) => {
       </section>
       <section id="section-san-pham">
         <div className="container mt-12">
-          <div className="flex w-full max-w-full min-h-96 gap-10">
-            <MenuLeft />
-            <ProductsHome />
-          </div>
+          <Layout className="w-full max-w-full min-h-96 gap-10">
+            <Sider
+              className="lg:block hidden "
+              width={320}
+              style={{ background: '#fff' }}
+            >
+              <MenuLeft />
+            </Sider>
+            <Content>
+              <ProductsHome />
+            </Content>
+          </Layout>
         </div>
       </section>
-      <section id="section-lien-he" >
+      <section id="section-lien-he">
         <Footer />
       </section>
     </div>
