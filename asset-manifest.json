@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/coi-xanh-thai-nam-client/static/css/main.8cc7ddc2.css",
-    "main.js": "/coi-xanh-thai-nam-client/static/js/main.c3267c31.js",
+    "main.js": "/coi-xanh-thai-nam-client/static/js/main.a2462aed.js",
     "index.html": "/coi-xanh-thai-nam-client/index.html",
     "static/media/getFetch.cjs": "/coi-xanh-thai-nam-client/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.8cc7ddc2.css.map": "/coi-xanh-thai-nam-client/static/css/main.8cc7ddc2.css.map",
-    "main.c3267c31.js.map": "/coi-xanh-thai-nam-client/static/js/main.c3267c31.js.map"
+    "main.a2462aed.js.map": "/coi-xanh-thai-nam-client/static/js/main.a2462aed.js.map"
   },
   "entrypoints": [
     "static/css/main.8cc7ddc2.css",
-    "static/js/main.c3267c31.js"
+    "static/js/main.a2462aed.js"
   ]
 }
