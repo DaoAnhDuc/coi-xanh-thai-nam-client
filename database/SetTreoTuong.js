@@ -1,4 +1,4 @@
-window.database.SetTreoTuong = [
+window.SetTreoTuong = [
   {
     img: './images/SetTreoTuong/45ce92812ad0f88ea1c15.jpg',
     name: '',

@@ -1,4 +1,4 @@
-window.database.GioDungDo = [
+window.GioDungDo = [
   {
     img: './images/GioDungHanhToi_TreoCay/9.png',
     name: '',

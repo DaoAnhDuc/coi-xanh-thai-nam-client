@@ -1,4 +1,4 @@
-window.database.GioTreTrungThuTet = [
+window.GioTreTrungThuTet = [
   { img: './images/GioTreTrungThuTet/81.png', name: '', description: '' },
   { img: './images/GioTreTrungThuTet/16.png', name: '', description: '' },
   { img: './images/GioTreTrungThuTet/18.png', name: '', description: '' },

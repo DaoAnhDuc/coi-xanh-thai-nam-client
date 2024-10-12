@@ -1,4 +1,4 @@
-window.database.DepGuoc = [
+window.DepGuoc = [
   { img: './images/DepGuoc/45.png', name: '', description: '' },
   { img: './images/DepGuoc/46.png', name: '', description: '' },
   { img: './images/DepGuoc/47.png', name: '', description: '' },
