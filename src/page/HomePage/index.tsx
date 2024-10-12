@@ -17,18 +17,24 @@ const HomePage = ({}: Props) => {
   }, []);
 
   return (
-    <div className="text-base overflow-x-hidden">
+    <div  className="text-base">
       <Header />
       <Slider />
       <Shipping />
-      <GioiThieu />
-      <div className="container mt-12">
-        <div className="flex w-full max-w-full min-h-96 gap-10">
-          <MenuLeft />
-          <ProductsHome />
+      <section id="section-gioi-thieu">
+        <GioiThieu />
+      </section>
+      <section id="section-san-pham">
+        <div className="container mt-12">
+          <div className="flex w-full max-w-full min-h-96 gap-10">
+            <MenuLeft />
+            <ProductsHome />
+          </div>
         </div>
-      </div>
-      <Footer />
+      </section>
+      <section id="section-lien-he" >
+        <Footer />
+      </section>
     </div>
   );
 };

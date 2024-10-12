@@ -8,6 +8,7 @@ $siderLeftWidth: 250px;
   .monitor {
     width: 100%;
     height: 100%;
+    overflow: auto;
 
     .header {
       height: $headerHeight;

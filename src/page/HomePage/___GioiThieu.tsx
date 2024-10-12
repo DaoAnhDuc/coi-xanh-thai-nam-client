@@ -4,7 +4,7 @@ type Props = {};
 
 const GioiThieu = ({}: Props) => {
   return (
-    <div className="mt-10">
+    <div className="mt-10" >
       <div className="container flex gap-10">
         <div
           className="flex-1 p-10 text-white"

@@ -1,4 +1,4 @@
-import {} from 'react';
+import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { IAppDataItem } from '../../reducers/slice/appDataSlice';
 import { useAppSelector } from '../../redux/store';
@@ -9,6 +9,14 @@ const MenuLeft = ({}: Props) => {
   const appData: Array<IAppDataItem> = useAppSelector((state) => state.appData);
   const location = useLocation();
   const { pathname } = location;
+  useEffect(() => {
+    const home: any = document.getElementById('app-layout');
+    home?.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+    return () => {};
+  }, [pathname]);
 
   return (
     <div
@@ -16,7 +24,9 @@ const MenuLeft = ({}: Props) => {
         width: 320,
         minWidth: 320,
         maxWidth: 320,
-        height: 'auto',
+        height: 600,
+        position: 'sticky',
+        top: 129,
       }}
     >
       {appData.map((item, index) => {
@@ -24,10 +34,9 @@ const MenuLeft = ({}: Props) => {
         return (
           <Link key={index} to={'/' + item.query}>
             <div
-              className="w-full uppercase h-10 leading-10 px-1 text-lg cursor-pointer  hover:text-white sticky"
+              className="w-full uppercase h-10 leading-10 px-2 text-base cursor-pointer  hover:text-white"
               style={{
                 borderBottom: '1px solid var(--green)',
-                top: 6 + index * 2.5 + 'rem',
                 backgroundColor: active ? 'var(--green)' : 'transparent',
                 color: active ? '#fff' : '#000',
               }}

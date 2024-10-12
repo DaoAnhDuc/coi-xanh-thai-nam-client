@@ -1,11 +1,47 @@
 import { SearchOutlined } from '@ant-design/icons';
 import { Input } from 'antd';
-import {} from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 type Props = {};
 
 const Header = ({}: Props) => {
+  useEffect(() => {
+    console.log(document.querySelectorAll('#header .smooth'));
+
+    document.querySelectorAll('#header asmooth').forEach((anchor) => {
+      console.log(anchor);
+
+      anchor.addEventListener('click', function (e: any) {
+        e.preventDefault();
+        alert(13);
+        const header: any = document.querySelector('#header');
+        const navHeight: any = header?.offsetHeight; // Lấy chiều cao của navigation
+        const targetPosition = e.offsetTop - navHeight; // Tính khoảng cách trừ đi chiều cao của navigation
+        document.querySelector(e.getAttribute('href')).scrollIntoView({
+          top: targetPosition,
+          behavior: 'smooth',
+        });
+      });
+    });
+    return () => {};
+  }, []);
+
+  const scroll = (e: any) => {
+    const targetSection: any = document.querySelector(
+      e.target.getAttribute('href'),
+    );
+    const header: any = document.getElementById('header');
+    const navHeight: any = header?.offsetHeight; // Lấy chiều cao của navigation
+    const targetPosition = targetSection.offsetTop - navHeight; // Tính khoảng cách trừ đi chiều cao của navigation
+    const home: any = document.getElementById('app-layout');
+    home.scrollTo({
+      top: targetPosition - 20,
+      behavior: 'smooth',
+    });
+    console.log(12312);
+  };
+
   return (
     <div
       id="header"
@@ -21,10 +57,42 @@ const Header = ({}: Props) => {
             <div className="text-xl font-bold mt-2">
               <Link to="/">Trang chủ</Link>
             </div>
-            <div className="text-xl font-bold mt-2">Sản phẩm</div>
-            <div className="text-xl font-bold mt-2">Chia sẻ</div>
-            <div className="text-xl font-bold mt-2">Giới thiệu</div>
-            <div className="text-xl font-bold mt-2">Liên hệ</div>
+            <div className="text-xl mt-2">
+              <a
+                className="smooth"
+                href="#section-gioi-thieu"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scroll(e);
+                }}
+              >
+                Giới thiệu
+              </a>
+            </div>
+            <div className="text-xl mt-2">
+              <a
+                className="smooth"
+                href="#section-san-pham"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scroll(e);
+                }}
+              >
+                Sản phẩm
+              </a>
+            </div>
+            <div className="text-xl mt-2">
+              <a
+                className="smooth"
+                href="#section-lien-he"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scroll(e);
+                }}
+              >
+                Liên hệ
+              </a>
+            </div>
           </div>
         </div>
         <div className="flex gap-2 items-center">

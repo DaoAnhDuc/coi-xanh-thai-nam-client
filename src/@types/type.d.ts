@@ -3,4 +3,3 @@ declare module '*.scss' {
   export default styles
 }
 
-
