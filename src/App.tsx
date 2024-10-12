@@ -9,10 +9,13 @@ import { ConfigProvider, Layout, theme } from 'antd';
 import { useEffect } from 'react';
 import LoadingTopBar from './components/base/loading/LoadingTopBar';
 // import Theme from './components/base/theme/Theme';
+import { ArrowUpOutlined } from '@ant-design/icons';
 import 'antd/dist/reset.css';
+import axios from 'axios';
 import { useLocation } from 'react-router-dom';
 import './App.css';
 import i18n from './i18n';
+import { IAppDataItem, setAppData } from './reducers/slice/appDataSlice';
 import { setLanguge } from './reducers/slice/themeLanguageSlice';
 import {
   getStore,
@@ -22,32 +25,14 @@ import {
 } from './redux/store';
 import { serviceConfig } from './services/serviceManager';
 import styleModule from './style.module.scss';
-import { ArrowUpOutlined } from '@ant-design/icons';
-import { IAppDataItem, setAppData } from './reducers/slice/appDataSlice';
-import axios from 'axios';
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { useToken } = theme;
 
-interface IProduct {
-  img: string;
-  name: string;
-  description: string;
-}
 
 declare global {
   interface Window {
     MyNamespace: any;
-    DecorCoBe: IProduct[];
-    DepGuoc: IProduct[];
-    GioDungDo: IProduct[];
-    GioDungHanhToi_TreoCay: IProduct[];
-    GioTreTrungThuTet: IProduct[];
-    KhayDungDo: IProduct[];
-    KhayGio: IProduct[];
-    Quat: IProduct[];
-    SetTreoTuong: IProduct[];
-    Tham: IProduct[];
-    Tui: IProduct[];
+
   }
 }
 
@@ -75,7 +60,7 @@ const App = () => {
     appData.forEach((i) => {
       try {
         promises.push(
-          axios.get(`/coi-xanh-thai-nam-client/database/${i.query}.json`),
+          axios.get(`/database/${i.query}.json`),
         );
       } catch (error) {}
     });

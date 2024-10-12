@@ -62,7 +62,7 @@ const initialState: Array<IAppDataItem> = [
   },
   {
     title: 'Khay đựng đồ',
-    query: 'decor-cho-be',
+    query: 'khay-dung-do',
     data: [],
   },
   {
