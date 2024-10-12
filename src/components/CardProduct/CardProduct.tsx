@@ -23,8 +23,7 @@ const CardProduct = ({item}: Props) => {
       />
       <div className="px-2 py-1">
         <p className="line-clamp-2 text-center">
-          {item.name ||
-            'Tên sản phẩm ở đây, có thể dài 2 dòng tùy theo dài quá sẽ có ...'}
+          {item.name }
         </p>
       </div>
       {/* <div className="flex justify-center  items-center gap-4 pb-4" /> */}
