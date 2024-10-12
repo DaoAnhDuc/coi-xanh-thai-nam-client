@@ -74,7 +74,9 @@ const App = () => {
     const promises: any[] = [];
     appData.forEach((i) => {
       try {
-        promises.push(axios.get(`/database/${i.query}.json`));
+        promises.push(
+          axios.get(`/coi-xanh-thai-nam-client/database/${i.query}.json`),
+        );
       } catch (error) {}
     });
     Promise.all(promises).then((values) => {
