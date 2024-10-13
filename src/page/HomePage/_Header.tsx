@@ -152,7 +152,7 @@ const Header = ({}: Props) => {
           <Button
             icon={<MenuOutlined />}
             onClick={() => setOpen(!open)}
-          ></Button>
+          />
         </div>
       </div>
     </div>

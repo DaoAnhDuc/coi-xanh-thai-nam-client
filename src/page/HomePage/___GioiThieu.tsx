@@ -20,7 +20,7 @@ const GioiThieu = ({}: Props) => {
             vực sản xuất đồ nội thất và trang trí thủ công tại Việt Nam. Tại Cói
             Xanh Thái Nam, chúng tôi cam kết sử dụng 100% nguyên liệu tự nhiên,
             thân thiện với môi trường. Mỗi sản phẩm đều được chế tác tỉ mỉ bởi
-            những nghệ nhân lành nghề, đảm bảo chất lượng vượt trội và thiết kế
+            những nghệ nhân làng nghề, đảm bảo chất lượng vượt trội và thiết kế
             độc đáo.
           </p>
           <p className="text-lg mt-4 leading-8">
