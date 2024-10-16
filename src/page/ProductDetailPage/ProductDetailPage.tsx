@@ -32,6 +32,7 @@ const ProductDetailPage = ({  }: Props) => {
           <img
             src={product.img.replace('.', '')}
             alt=""
+            loading='lazy'
             className="w-full h-72 object-contain  hover:scale-105"
           />
           <div className="px-2 py-1">

@@ -19,6 +19,7 @@ const CardProduct = ({item}: Props) => {
       <img
         src={item.img}
         alt=""
+        loading="lazy"
         className="w-full h-72 object-contain  hover:scale-105"
       />
       <div className="px-2 py-1">
