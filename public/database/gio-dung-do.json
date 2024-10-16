@@ -1,186 +1,25 @@
 [
-  { "img": "./images/GioDungDo/16.png", "name": "", "description": "" },
-  { "img": "./images/GioDungDo/17.png", "name": "", "description": "" },
-  { "img": "./images/GioDungDo/18.png", "name": "", "description": "" },
-
-  {
-    "img": "./images/GioDungDo/IMG_3746.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_3746.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_3752.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_3752.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_3755.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_3755.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7404.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7404.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7406.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7406.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7407.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7407.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7408.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7408.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7409.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7409.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7410.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7410.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7411.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7411.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7412.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7412.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7414.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7414.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7415.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7415.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7416.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7416.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7417.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7417.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7418.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/IMG_7418.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/z5714722163154_b089bc2a94b5081f12ba6ce3fc433e9b.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/z5714722166706_8b0f97a6d708faef16c650b8cd9d6b63.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/z5714722175698_a93fa7a7377bdf8dadbd2b2f915a56cd.jpg",
-    "name": "",
-    "description": ""
-  },
-  {
-    "img": "./images/GioDungDo/z5714722189619_fe6eb866affdb56b57aa70c213a8e9f2.jpg",
-    "name": "",
-    "description": ""
-  }
+  { "img": "./images/GioDungDo/1.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/2.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/3.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/4.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/5.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/6.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/7.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/8.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/9.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/10.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/11.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/12.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/13.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/14.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/15.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/16.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/17.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/18.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/19.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/20.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/21.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/22.jpg", "name": "", "description": "" },
+  { "img": "./images/GioDungDo/23.jpg", "name": "", "description": "" }
 ]
