@@ -17,12 +17,10 @@ const ProductDetailPage = ({  }: Props) => {
     );
   return (
     <div className="container mt-12 mb-12">
-      <p className="font-bold text-3xl">ProductDetailPage</p>
-      <div style={{ minHeight: '90vh' }}>
-        <div
-          className="relative hover:shadow-lg cursor-pointer overflow-hidden"
-          style={{ border: '1px solid #dfdfdf' }}
-        >
+      <p className="font-bold text-3xl"></p>
+      <img style={{maxHeight: '80vh', maxWidth: '100%', margin: 'auto'}} src={product.img.replace('.', '')} alt="" />
+      {/* <div style={{ minHeight: '90vh' }}>
+        <div className="relative hover:shadow-lg cursor-pointer overflow-hidden">
           <div
             className="absolute top-3 right-3 w-12 h-12 text-white rounded-full flex justify-center items-center"
             style={{ background: 'var(--green)' }}
@@ -32,7 +30,7 @@ const ProductDetailPage = ({  }: Props) => {
           <img
             src={product.img.replace('.', '')}
             alt=""
-            loading='lazy'
+            loading="lazy"
             className="w-full h-72 object-contain  hover:scale-105"
           />
           <div className="px-2 py-1">
@@ -42,7 +40,7 @@ const ProductDetailPage = ({  }: Props) => {
           </div>
           <div className="flex justify-center  items-center gap-4 pb-4" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
