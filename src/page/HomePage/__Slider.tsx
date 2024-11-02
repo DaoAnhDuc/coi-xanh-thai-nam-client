@@ -6,9 +6,9 @@ type Props = {};
 
 const Slider = ({}: Props) => {
   const imgs = [
-    './images/slide/Slide1.jpg',
-    './images/slide/Slide2.jpg',
-    './images/slide/Slide3.jpg',
+    '/images/slide/Slide1.jpg',
+    '/images/slide/Slide2.jpg',
+    '/images/slide/Slide3.jpg',
   ];
   return (
     <div>

@@ -1,11 +1,11 @@
 [
-  { "img": "./images/Quat/1.jpg", "name": "", "description": "" },
-  { "img": "./images/Quat/2.jpg", "name": "", "description": "" },
-  { "img": "./images/Quat/3.jpg", "name": "", "description": "" },
-  { "img": "./images/Quat/4.jpg", "name": "", "description": "" },
-  { "img": "./images/Quat/5.jpg", "name": "", "description": "" },
-  { "img": "./images/Quat/6.jpg", "name": "", "description": "" },
-  { "img": "./images/Quat/7.jpg", "name": "", "description": "" },
-  { "img": "./images/Quat/8.jpg", "name": "", "description": "" },
-  { "img": "./images/Quat/9.jpg", "name": "", "description": "" }
+  { "img": "/images/Quat/1.jpg", "name": "", "description": "" },
+  { "img": "/images/Quat/2.jpg", "name": "", "description": "" },
+  { "img": "/images/Quat/3.jpg", "name": "", "description": "" },
+  { "img": "/images/Quat/4.jpg", "name": "", "description": "" },
+  { "img": "/images/Quat/5.jpg", "name": "", "description": "" },
+  { "img": "/images/Quat/6.jpg", "name": "", "description": "" },
+  { "img": "/images/Quat/7.jpg", "name": "", "description": "" },
+  { "img": "/images/Quat/8.jpg", "name": "", "description": "" },
+  { "img": "/images/Quat/9.jpg", "name": "", "description": "" }
 ]

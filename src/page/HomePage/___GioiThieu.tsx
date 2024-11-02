@@ -36,7 +36,7 @@ const GioiThieu = ({}: Props) => {
             cộng đồng địa phương.
           </p>
         </div>
-        <img src="./images/tn4.png" alt="" className="lg:w-1/2 m-auto" />
+        <img src="/images/tn4.png" alt="" className="lg:w-1/2 m-auto" />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { I18nextProvider } from 'react-i18next';
 import Router from './router/Router';
 
 import { ConfigProvider, Layout, theme } from 'antd';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import LoadingTopBar from './components/base/loading/LoadingTopBar';
 // import Theme from './components/base/theme/Theme';
 import { ArrowUpOutlined } from '@ant-design/icons';
@@ -28,7 +28,6 @@ import styleModule from './style.module.scss';
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { useToken } = theme;
 
-
 declare global {
   // tslint:disable-next-line:interface-name
   interface Window {
@@ -44,6 +43,7 @@ const App = () => {
   );
   const dispatch = useAppDispatch();
   const { pathname } = useLocation();
+  const [loadingApp, setLoadingApp] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -59,9 +59,7 @@ const App = () => {
     const promises: Array<any> = [];
     appData.forEach((i) => {
       try {
-        promises.push(
-          axios.get(`/database/${i.query}.json`),
-        );
+        promises.push(axios.get(`/database/${i.query}.json`));
       } catch (error) {}
     });
     Promise.all(promises).then((values) => {
@@ -73,6 +71,7 @@ const App = () => {
         });
       });
       dispatch(setAppData(newAppData));
+      setLoadingApp(false);
     });
   };
 
@@ -97,7 +96,7 @@ const App = () => {
         >
           <Layout id="app-layout" className={styleModule.monitor}>
             <LoadingTopBar />
-            <Router />
+            {loadingApp ? <div></div> : <Router />}
             {/* <div className="fixed bottom-40 right-8 z-20">
               <img
                 className="w-12 h-12"

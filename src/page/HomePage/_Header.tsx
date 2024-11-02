@@ -91,7 +91,7 @@ const Header = ({}: Props) => {
       <div className="container flex justify-between items-center ">
         <div className="flex gap-12 items-center">
           <Link to="/">
-            <img src="./images/logo.png" alt="" className="lg:h-16 h-12" />
+            <img src="/images/logo.png" alt="" className="lg:h-16 h-12" />
           </Link>
           <div className="hidden lg:flex gap-10 ">
             <div className="text-xl font-bold mt-2">

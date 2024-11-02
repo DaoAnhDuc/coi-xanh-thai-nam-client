@@ -1,24 +1,37 @@
-import { } from 'react';
+import {} from 'react';
 import { IAppDataItem } from '../../reducers/slice/appDataSlice';
 import { useParams } from 'react-router-dom';
 import { useAppSelector } from '../../redux/store';
 
 type Props = {};
 
-const ProductDetailPage = ({  }: Props) => {
-    const { productType, productId } = useParams();
-    const appData: Array<IAppDataItem> = useAppSelector((state) => state.appData);
-    const data: IAppDataItem | undefined = appData.find(
-      (i) => i.query === productType,
-    );
-    if (!data) return null;
-    const product = data.data.find(
-      (_item, index) => index.toString() === productId,
-    );
+const ProductDetailPage = ({}: Props) => {
+  const { productType, productId } = useParams();
+  const appData: Array<IAppDataItem> = useAppSelector((state) => state.appData);
+  const data: IAppDataItem | undefined = appData.find(
+    (i) => i.query === productType,
+  );
+  if (!data) return null;
+  const product = data.data.find(
+    (_item, index) => index.toString() === productId,
+  );
   return (
-    <div className="container mt-12 mb-12">
+    <div className="container ">
       <p className="font-bold text-3xl"></p>
-      <img style={{maxHeight: '80vh', maxWidth: '100%', margin: 'auto'}} src={product.img.replace('.', '')} alt="" />
+      <div style={{ minHeight: 'calc(100vh - 82px)' }}>
+        <img
+          style={{
+            paddingTop: 60,
+            paddingBottom: 60,
+            boxSizing: 'border-box',
+            maxHeight: 'calc(100vh - 82px)',
+            maxWidth: '100%',
+            margin: 'auto',
+          }}
+          src={product.img}
+          alt=""
+        />
+      </div>
       {/* <div style={{ minHeight: '90vh' }}>
         <div className="relative hover:shadow-lg cursor-pointer overflow-hidden">
           <div
@@ -28,7 +41,7 @@ const ProductDetailPage = ({  }: Props) => {
             {product.sale}
           </div>
           <img
-            src={product.img.replace('.', '')}
+            src={product.img}
             alt=""
             loading="lazy"
             className="w-full h-72 object-contain  hover:scale-105"
